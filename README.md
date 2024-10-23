@@ -114,3 +114,8 @@ The Vehicle Allocation System is a web API designed to manage vehicle allocation
   - Monitor logs and performance metrics regularly.
   - Update dependencies to maintain security and performance.
   - Consider implementing automated tests to ensure reliability.
+
+
+## Acknowledgments
+  - FastAPI: ```https://fastapi.tiangolo.com/```
+  - MongoDB: ```https://www.mongodb.com/```
