@@ -74,18 +74,21 @@ The Vehicle Allocation System is a web API designed to manage vehicle allocation
     - pip: Python package installer
   #### Installation
   **1. Clone the repository:**  
+  
       ```
       git clone https://github.com/yourusername/vehicle-allocation-system.git
       cd vehicle-allocation-system
       ```
       
   **2. Create a virtual environment (optional):**
+  
       ```
       python -m venv venv
       source venv/bin/activate  # On Windows use `venv\Scripts\activate`
       ```
       
   **3. Install required packages:**
+  
       ```
       pip install -r requirements.txt
       ```
