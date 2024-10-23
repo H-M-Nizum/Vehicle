@@ -8,6 +8,7 @@ from bson import ObjectId
 
 router = APIRouter()
 
+# Simple get for home page
 @router.get('/')
 async def home():
     return {'message' : "Welcome to Softwd Ltd vehicle allocation system for employees"}
@@ -101,9 +102,10 @@ async def allocate_vehicle(allocation: Allocation):
     if employee_allocation:
         raise HTTPException(status_code=401, detail="Employee already allocated vehicle for this day.")
     
-    if not existing_vehicle:  # Fixed the logic to check if vehicle does not exist
+    # Fixed the logic to check if vehicle does not exist
+    if not existing_vehicle:  
         raise HTTPException(status_code=402, detail="This vehicle does not exist.")
-       # Compare the allocation_date with the current datetime
+    # Compare the allocation_date with the current datetime
     if allocation_doc['allocation_date'] <= datetime.now():
         raise HTTPException(status_code=403, detail="Allocation has already passed. You can't Create it.")
     
@@ -119,7 +121,7 @@ async def find_all_allocations():
     allocations = []
     
     for allocation in allocations_cursor:
-        allocation['id'] = str(allocation['_id'])  # Add the id field
+        allocation['id'] = str(allocation['_id']) 
         allocations.append(AllocationSchema(**allocation))
     
     return allocations

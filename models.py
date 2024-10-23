@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from datetime import date
-from typing import Optional
+
 
 class Vehicle(BaseModel):
     vehicle_id: str

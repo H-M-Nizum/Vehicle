@@ -1,10 +1,11 @@
+## Config db for easy check-----
 from pymongo import MongoClient
 
 client = MongoClient(f"mongodb+srv://nizum:5kXPMsQBqhf65LZr@cluster0.4fphg1c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 vehicle_conn = client['Vehicle']
 allocation_conn = client['Allocation']
 
-
+## Best Way for config db------
 # import os
 # from pymongo import MongoClient
 # from dotenv import load_dotenv
