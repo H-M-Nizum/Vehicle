@@ -26,6 +26,8 @@ The Vehicle Allocation System is a web API designed to manage vehicle allocation
   }
 - **GET /vehicles/**  
   Retrieve all vehicles.
+- **GET /vehicles/{vehicle_id}**  
+  Retrieve a specific vehicle by its ID.
 - **PUT /vehicles/{vehicle_id}**  
   Update a specific vehicle.
   **Request Body**:
@@ -36,4 +38,30 @@ The Vehicle Allocation System is a web API designed to manage vehicle allocation
   }
 - **DELETE /vehicles/{vehicle_id}**  
   Delete a specific vehicle by its ID.
+  
+### Allocation Management
+- **POST /allocations/**  
+  Create a new allocation with a employee.  
+  **Request Body**:
+  ```json
+  {
+    "vehicle_id": "string",
+    "employee_id": "string",
+    "allocation_date": "YYYY-MM-DD"
+  }
+- **GET /allocations/**  
+  Retrieve all allocation .
+- **GET /allocations/{id}**  
+  Retrieve a specific allocation  by its ID.
+- **PUT /allocations/{id}**  
+  Update a specific allocation .
+  **Request Body**:
+  ```json
+  {
+      "vehicle_id": "string",
+      "employee_id": "string",
+      "allocation_date": "YYYY-MM-DD"
+  }
+- **DELETE /allocations/{id}**  
+  Delete a specific allocation  by its ID.
   
