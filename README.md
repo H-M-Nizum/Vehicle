@@ -23,7 +23,17 @@ The Vehicle Allocation System is a web API designed to manage vehicle allocation
   {
       "vehicle_id": "string",
       "driver_id": "string",
-      "make": "string",
-      "model": "string",
-      "year": "integer"
   }
+- **GET /vehicles/**  
+  Retrieve all vehicles.
+- **PUT /vehicles/{vehicle_id}**  
+  Update a specific vehicle.
+  **Request Body**:
+  ```json
+  {
+      "vehicle_id": "string",
+      "driver_id": "string",
+  }
+- **DELETE /vehicles/{vehicle_id}**  
+  Delete a specific vehicle by its ID.
+  
