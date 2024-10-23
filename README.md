@@ -75,10 +75,10 @@ The Vehicle Allocation System is a web API designed to manage vehicle allocation
   #### Installation
   **1. Clone the repository:**  
   
-      ```
+    
       git clone https://github.com/yourusername/vehicle-allocation-system.git
       cd vehicle-allocation-system
-      ```
+
       
   **2. Create a virtual environment (optional):**
   
