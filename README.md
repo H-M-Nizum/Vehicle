@@ -105,11 +105,11 @@ The Vehicle Allocation System is a web API designed to manage vehicle allocation
 
 ## Deployment
   #### Vercel
-    - Push your code to a GitHub repository.
-    - Sign in to Vercel and create a new project.
-    - Connect your GitHub repository to Vercel.
-    - Set any required environment variables in the Vercel dashboard.
-    - Deploy your project.
+  - Push your code to a GitHub repository.
+  - Sign in to Vercel and create a new project.
+  - Connect your GitHub repository to Vercel.
+  - Set any required environment variables in the Vercel dashboard.
+  - Deploy your project.
 ## Maintenance
   - Monitor logs and performance metrics regularly.
   - Update dependencies to maintain security and performance.
