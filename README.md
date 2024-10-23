@@ -95,10 +95,15 @@ The Vehicle Allocation System is a web API designed to manage vehicle allocation
       
   **4. Configure your MongoDB connection in db.py or set environment variables accordingly.(optional for check task)**
 
-#### Running the Application
+### Running the Application
   To run the application locally:
   ```
   uvicorn main:app --reload
+  ```
+### Test the Application
+  To run the test script locally
+  ```
+  pytest test_routes.py
   ```
   Access the API at ```http://127.0.0.1:8000```
   Access the swagger documentation at ```http://127.0.0.1:8000/docs```
