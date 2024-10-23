@@ -78,15 +78,18 @@ The Vehicle Allocation System is a web API designed to manage vehicle allocation
       git clone https://github.com/yourusername/vehicle-allocation-system.git
       cd vehicle-allocation-system
       ```
+      
   **2. Create a virtual environment (optional):**
       ```
       python -m venv venv
       source venv/bin/activate  # On Windows use `venv\Scripts\activate`
       ```
+      
   **3. Install required packages:**
       ```
       pip install -r requirements.txt
       ```
+      
   **4. Configure your MongoDB connection in db.py or set environment variables accordingly.(optional for check task)**
 
 #### Running the Application
