@@ -64,4 +64,47 @@ The Vehicle Allocation System is a web API designed to manage vehicle allocation
   }
 - **DELETE /allocations/{id}**  
   Delete a specific allocation  by its ID.
-  
+
+
+
+## Getting Started
+  #### Prerequisites
+    - Python: 3.7 or higher
+    - MongoDB: Local or cloud instance
+    - pip: Python package installer
+  #### Installation
+    1. Clone the repository:
+    ```
+    [git clone https://github.com/yourusername/vehicle-allocation-system.git
+    cd vehicle-allocation-system](https://github.com/H-M-Nizum/Vehicle.git)
+    ```
+    2. Create a virtual environment (optional):
+    ```
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+    3. Install required packages:
+    ```
+    pip install -r requirements.txt
+    ```
+    4. Configure your MongoDB connection in db.py or set environment variables accordingly.(optional for check task)
+
+#### Running the Application
+  To run the application locally:
+  ```
+  uvicorn main:app --reload
+  ```
+  Access the API at ```http://127.0.0.1:8000```
+  Access the swagger documentation at ```http://127.0.0.1:8000/docs```
+
+## Deployment
+  #### Vercel
+    - Push your code to a GitHub repository.
+    - Sign in to Vercel and create a new project.
+    - Connect your GitHub repository to Vercel.
+    - Set any required environment variables in the Vercel dashboard.
+    - Deploy your project.
+## Maintenance
+  - Monitor logs and performance metrics regularly.
+  - Update dependencies to maintain security and performance.
+  - Consider implementing automated tests to ensure reliability.
